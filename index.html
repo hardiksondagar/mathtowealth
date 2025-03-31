@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math To Wealth - Financial Tools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-8 py-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-chart-line text-indigo-600 text-3xl mr-3"></i>
+                <h1 class="text-2xl font-bold text-gray-800">Math To Wealth</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#projects" class="text-gray-600 hover:text-indigo-600 transition">Projects</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-indigo-600 transition">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-8 py-12">
+        <!-- Hero section with split layout -->
+        <section class="mb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1">
+                <h2 class="text-5xl font-bold text-gray-800 mb-6 leading-tight">Turn <span class="text-indigo-600">Financial Math</span> Into Real Wealth</h2>
+                <p class="text-xl text-gray-600 mb-8">Our suite of calculators and tools help you understand complex financial concepts, make informed decisions, and build lasting wealth.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#projects" class="bg-indigo-600 text-white px-8 py-4 rounded-lg hover:bg-indigo-700 transition inline-block shadow-md text-center font-medium">Explore Tools</a>
+                    <a href="#about" class="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg hover:border-indigo-600 hover:text-indigo-600 transition inline-block text-center font-medium">Learn More</a>
+                </div>
+                <div class="mt-8 flex items-center text-sm text-gray-500">
+                    <span class="flex items-center mr-4"><i class="fas fa-check-circle text-green-500 mr-2"></i> Free to use</span>
+                    <span class="flex items-center mr-4"><i class="fas fa-check-circle text-green-500 mr-2"></i> No sign-up required</span>
+                    <span class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Built by experts</span>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 flex justify-center items-center">
+                <div class="relative">
+                    <div class="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-chart-line text-white text-8xl"></i>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-indigo-100 p-4 rounded-full shadow-md">
+                        <i class="fas fa-calculator text-indigo-600 text-2xl"></i>
+                    </div>
+                    <div class="absolute -top-4 -left-4 bg-purple-100 p-4 rounded-full shadow-md">
+                        <i class="fas fa-dollar-sign text-purple-600 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features highlight section -->
+        <section class="mb-24">
+            <div class="text-center mb-16">
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full text-sm font-medium">ABOUT OUR TOOLS</span>
+                <h2 class="text-3xl font-bold text-gray-800 mt-4">Helpful Financial Calculators</h2>
+                <div class="w-24 h-1 bg-indigo-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="bg-indigo-100 w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-6">
+                        <i class="fas fa-calculator text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Easy to Use</h3>
+                    <p class="text-gray-600">Simple calculators that help visualize financial concepts without complicated jargon.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="bg-indigo-100 w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-6">
+                        <i class="fas fa-user-shield text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">No Sign-up Required</h3>
+                    <p class="text-gray-600">Just use the tools directly - no account creation or personal information needed.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="bg-indigo-100 w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-6">
+                        <i class="fas fa-laptop-code text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Open Source</h3>
+                    <p class="text-gray-600">All tools are built as personal side projects and freely available for everyone to use.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section with alternating layout -->
+        <section id="projects" class="mb-24">
+            <div class="text-center mb-16">
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full text-sm font-medium">OUR TOOLS</span>
+                <h2 class="text-3xl font-bold text-gray-800 mt-4">Financial Calculators & Tools</h2>
+                <div class="w-24 h-1 bg-indigo-600 mx-auto mt-4"></div>
+            </div>
+            
+            <!-- Income Tax Calculator - Card 1 -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 hover:shadow-2xl transition transform hover:-translate-y-1 flex flex-col md:flex-row">
+                <div class="md:w-2/5 bg-gradient-to-br from-indigo-500 to-indigo-700 p-8 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="bg-white/20 p-4 rounded-full inline-block mb-4">
+                            <i class="fas fa-calculator text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Income Tax Calculator</h3>
+                        <span class="bg-white/20 text-white text-xs px-3 py-1 rounded-full">Finance</span>
+                    </div>
+                </div>
+                <div class="md:w-3/5 p-8">
+                    <p class="text-gray-600 mb-6 text-lg">A comprehensive tool for calculating income tax with detailed breakdowns and explanations to help you understand your tax liability.</p>
+                    <ul class="mb-6 space-y-2">
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-indigo-600 mr-2"></i> Accurate tax estimates based on current rates</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-indigo-600 mr-2"></i> Breakdown of taxes by brackets and categories</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-indigo-600 mr-2"></i> Tax planning recommendations</li>
+                    </ul>
+                    <a href="./tools/income-tax-calculator" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition inline-block shadow-md font-medium">
+                        Try the Calculator
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Will My Money Last? - Card 2 -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 hover:shadow-2xl transition transform hover:-translate-y-1 flex flex-col md:flex-row-reverse">
+                <div class="md:w-2/5 bg-gradient-to-br from-blue-500 to-blue-700 p-8 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="bg-white/20 p-4 rounded-full inline-block mb-4">
+                            <i class="fas fa-piggy-bank text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Will My Money Last?</h3>
+                        <span class="bg-white/20 text-white text-xs px-3 py-1 rounded-full">Retirement</span>
+                    </div>
+                </div>
+                <div class="md:w-3/5 p-8">
+                    <p class="text-gray-600 mb-6 text-lg">A financial planning tool to calculate retirement savings and longevity, helping you ensure your nest egg lasts throughout retirement.</p>
+                    <ul class="mb-6 space-y-2">
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-600 mr-2"></i> Interactive retirement income projection</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-600 mr-2"></i> Factor in inflation and market returns</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-600 mr-2"></i> Adjust spending strategies for optimal results</li>
+                    </ul>
+                    <a href="./tools/will-my-money-last" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block shadow-md font-medium">
+                        Try the Calculator
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Real Estate Return Calculator - Card 3 -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 hover:shadow-2xl transition transform hover:-translate-y-1 flex flex-col md:flex-row">
+                <div class="md:w-2/5 bg-gradient-to-br from-purple-500 to-purple-700 p-8 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="bg-white/20 p-4 rounded-full inline-block mb-4">
+                            <i class="fas fa-home text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Real Estate Return Calculator</h3>
+                        <span class="bg-white/20 text-white text-xs px-3 py-1 rounded-full">Real Estate</span>
+                    </div>
+                </div>
+                <div class="md:w-3/5 p-8">
+                    <p class="text-gray-600 mb-6 text-lg">Compare property investment returns with alternative options and make informed financial decisions for your future.</p>
+                    <ul class="mb-6 space-y-2">
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-purple-600 mr-2"></i> Calculate ROI on rental properties</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-purple-600 mr-2"></i> Compare real estate vs stock market returns</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-purple-600 mr-2"></i> Factor in expenses, taxes, and appreciation</li>
+                    </ul>
+                    <a href="./tools/real-estate-return-calculator" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition inline-block shadow-md font-medium">
+                        Try the Calculator
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Gmail Attachment Downloader - Card 4 -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12 hover:shadow-2xl transition transform hover:-translate-y-1 flex flex-col md:flex-row-reverse">
+                <div class="md:w-2/5 bg-gradient-to-br from-red-500 to-red-700 p-8 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="bg-white/20 p-4 rounded-full inline-block mb-4">
+                            <i class="fas fa-envelope text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Gmail Attachment Downloader</h3>
+                        <span class="bg-white/20 text-white text-xs px-3 py-1 rounded-full">Productivity</span>
+                    </div>
+                </div>
+                <div class="md:w-3/5 p-8">
+                    <p class="text-gray-600 mb-6 text-lg">Download bulk attachments from multiple emails in your Gmail account, saving time and simplifying file management.</p>
+                    <ul class="mb-6 space-y-2">
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-red-600 mr-2"></i> Batch download multiple attachments</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-red-600 mr-2"></i> Filter by date, sender, or subject</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-red-600 mr-2"></i> Organize downloads into folders automatically</li>
+                    </ul>
+                    <a href="./tools/gmail-attachment-downloader" class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition inline-block shadow-md font-medium">
+                        Try the Tool
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials section -->
+        <section class="mb-24 bg-gray-50 py-16 px-6 rounded-2xl">
+            <div class="text-center mb-12">
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full text-sm font-medium">TESTIMONIALS</span>
+                <h2 class="text-3xl font-bold text-gray-800 mt-4">What Our Users Say</h2>
+                <div class="w-24 h-1 bg-indigo-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"The Income Tax Calculator saved me thousands of rupees by helping me navigate through India's complex tax system. Perfect for IT professionals in Bangalore!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-indigo-700 font-bold">PP</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Pratik Pambhar</h4>
+                            <p class="text-gray-500 text-sm">Engineering Manager at Razorpay</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"The retirement calculator is perfectly adapted for the Indian market. It factors in our unique inflation rates and helps plan for long-term goals in Mumbai's expensive real estate market."</p>
+                    <div class="flex items-center">
+                        <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-blue-700 font-bold">SC</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sumit Chudasama</h4>
+                            <p class="text-gray-500 text-sm">Head of Product & Technology at PETRONAS</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"As someone investing in properties across Gujarat, this real estate calculator has been invaluable. It helped me analyze rental yields in Ahmedabad versus fixed deposits in Indian banks."</p>
+                    <div class="flex items-center">
+                        <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-purple-700 font-bold">PS</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Prince Sojitra</h4>
+                            <p class="text-gray-500 text-sm">Senior Software Engineer at Axios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section with call-to-action -->
+        <section id="about" class="bg-gradient-to-br from-indigo-600 to-indigo-800 text-white py-16 px-8 rounded-2xl mb-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">About Math To Wealth</h2>
+                <p class="text-xl mb-8 text-indigo-100">
+                    We believe that financial literacy is key to building wealth. Our tools are designed to demystify complex financial concepts and help you make informed decisions about your money.
+                </p>
+                <p class="text-xl mb-12 text-indigo-100">
+                    Whether you're planning for retirement, investing in real estate, or optimizing your taxes, our calculators provide the insights you need to succeed.
+                </p>
+                <a href="#projects" class="bg-white text-indigo-700 px-8 py-4 rounded-lg hover:bg-indigo-100 transition inline-block shadow-md font-medium">Start Using Our Tools</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-indigo-400 text-2xl mr-3"></i>
+                        <h2 class="text-xl font-bold text-white">Math To Wealth</h2>
+                    </div>
+                    <p class="text-gray-400 mb-6">Financial tools designed to help you make smarter decisions and build long-term wealth.</p>
+                    <div class="flex space-x-4 social-icons">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-white text-lg">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#projects" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Our Tools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tools/income-tax-calculator" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Income Tax Calculator
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tools/will-my-money-last" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Retirement Calculator
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-white text-lg">More Resources</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="./tools/real-estate-return-calculator" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Real Estate Calculator
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./tools/gmail-attachment-downloader" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Gmail Attachment Tool
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Terms of Service
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-8 text-center text-gray-400">
+                <p>&copy; <span id="current-year">2023</span> Math To Wealth. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

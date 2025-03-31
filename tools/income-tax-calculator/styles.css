@@ -1,0 +1,414 @@
+/* Custom styles beyond Tailwind */
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #eef2f7 100%);
+}
+
+.form-checkbox {
+    border-radius: 0.25rem;
+    border-color: #d1d5db;
+}
+
+/* Card hover effect */
+.bg-white.rounded-xl.shadow-lg {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bg-white.rounded-xl.shadow-lg:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Input focus style */
+input:focus {
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+    outline: none;
+}
+
+/* Chart styling */
+canvas {
+    max-width: 100%;
+}
+
+/* Enhanced Chart.js tooltip styling */
+#tax-chart {
+    position: relative;
+}
+
+/* Add pulse animation to highlighted points */
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.7);
+    }
+    
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+    }
+    
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+    }
+}
+
+/* Tax Slabs Table Styling */
+.tax-slabs-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.tax-slabs-table thead {
+    background-color: #f3f4f6;
+}
+
+.tax-slabs-table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: #4b5563;
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.tax-slabs-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.tax-slabs-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.tax-slabs-table td {
+    padding: 12px 16px;
+    font-size: 0.875rem;
+    color: #374151;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.tax-slabs-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tax-slabs-table tr:nth-child(odd) {
+    background-color: #f9fafb;
+}
+
+.tax-slabs-table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* FAQ Section Styling */
+.faq-item {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.faq-question:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+.faq-question.active svg {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    background-color: #f9fafb;
+    transition: all 0.3s ease;
+}
+
+/* Tax breakdown details */
+#tax-details-section {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-out, max-height 0.3s ease-out;
+}
+
+#tax-details-section.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+    .bg-white.rounded-xl.shadow-lg:hover {
+        transform: none;
+    }
+    
+    /* Keep cards from enlarging on mobile */
+    .bg-white.rounded-xl.shadow-lg {
+        margin-bottom: 1rem;
+    }
+    
+    /* Make buttons more touchable */
+    .faq-question {
+        padding: 0.75rem;
+    }
+}
+
+/* Show details button hover effect */
+#toggle-tax-details {
+    position: relative;
+}
+
+#toggle-tax-details:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#toggle-tax-details:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Example Preview Cards */
+.preview-card {
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #e5e7eb;
+    cursor: pointer;
+}
+
+.preview-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-color: #d1d5db;
+}
+
+.preview-card .income {
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+}
+
+.preview-card .tax {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #4f46e5;
+}
+
+.preview-card .percentage {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.preview-card .monthly-salary {
+    font-size: 0.875rem;
+    color: #047857;
+    margin-top: 0.25rem;
+    font-weight: 500;
+}
+
+.preview-card.zero-tax {
+    background-color: #f0fdf4;
+    border-color: #bbf7d0;
+}
+
+.preview-card.zero-tax .tax {
+    color: #16a34a;
+}
+
+.preview-card.high-tax {
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+}
+
+.preview-card.high-tax .tax {
+    color: #2563eb;
+}
+
+/* Responsive adjustments for preview cards */
+@media (max-width: 768px) {
+    .preview-card {
+        padding: 0.75rem;
+    }
+    
+    .preview-card .tax {
+        font-size: 1.125rem;
+    }
+    
+    .preview-card .percentage {
+        font-size: 0.75rem;
+    }
+}
+
+/* Income Slider Styling */
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 4px;
+    background: #e5e7eb;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #4f46e5;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #4f46e5;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    border: none;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover,
+input[type="range"]::-moz-range-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+input[type="range"]::-webkit-slider-thumb:active,
+input[type="range"]::-moz-range-thumb:active {
+    transform: scale(1.1);
+}
+
+/* Slider tooltip */
+#slider-tooltip {
+    transition: opacity 0.2s, transform 0.2s;
+    min-width: 120px;
+    text-align: center;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+
+#slider-tooltip.visible {
+    opacity: 1;
+}
+
+.tooltip-arrow {
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    margin-left: -4px;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background-color: #4f46e5;
+}
+
+/* Tax bracket visualization */
+.tax-bracket-indicator {
+    position: absolute;
+    height: 16px;
+    background-color: rgba(79, 70, 229, 0.2);
+    border-radius: 2px;
+    top: -4px;
+    transition: left 0.2s, width 0.2s;
+}
+
+/* Share button and section styles */
+#share-result-btn {
+    transition: all 0.2s ease-in-out;
+}
+
+#share-result-btn:hover svg {
+    transform: rotate(-10deg);
+}
+
+#share-result-btn:active {
+    transform: scale(0.95);
+}
+
+@keyframes copy-success {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+#share-result-btn.copied svg {
+    animation: copy-success 0.5s ease-in-out;
+}
+
+/* Copy tooltip */
+.copy-tooltip {
+    position: absolute;
+    background-color: rgba(79, 70, 229, 0.9);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.copy-tooltip.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.copy-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(79, 70, 229, 0.9) transparent transparent transparent;
+}
+
+/* Mobile responsive share section */
+@media (max-width: 768px) {
+    #share-result-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Disable hover effects */
+.no-hover {
+  transition: none !important;
+  transform: none !important;
+}
+.no-hover:hover {
+  transform: none !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+} 

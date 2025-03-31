@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Income Tax Calculator FY 2025-26 | New Tax Regime India</title>
+    <meta name="title" content="Income Tax Calculator FY 2025-26 | New Tax Regime India">
+    <meta name="description" content="Calculate your income tax liability for FY 2025-26 (AY 2026-27) under the new tax regime in India. Free, accurate, and easy-to-use tax calculator with detailed breakdown.">
+    <meta name="keywords" content="income tax calculator, tax calculator india, new tax regime, FY 2025-26, AY 2026-27, income tax india, tax slabs, section 87A, standard deduction">
+    <meta name="author" content="Income Tax Calculator">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T96F7YCF84"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-T96F7YCF84');
+    </script>
+    
+    <link rel="author" href="humans.txt" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://incometaxcal.in/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://incometaxcal.in/">
+    <meta property="og:title" content="Income Tax Calculator FY 2025-26 | New Tax Regime India">
+    <meta property="og:description" content="Calculate your income tax liability for FY 2025-26 (AY 2026-27) under the new tax regime in India. Free, accurate, and easy-to-use tax calculator with detailed breakdown.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://incometaxcal.in/">
+    <meta property="twitter:title" content="Income Tax Calculator FY 2025-26 | New Tax Regime India">
+    <meta property="twitter:description" content="Calculate your income tax liability for FY 2025-26 (AY 2026-27) under the new tax regime in India. Free, accurate, and easy-to-use tax calculator with detailed breakdown.">
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Income Tax Calculator FY 2025-26",
+      "description": "Calculate your income tax liability for FY 2025-26 (AY 2026-27) under the new tax regime in India.",
+      "url": "https://incometaxcal.in/",
+      "applicationCategory": "FinanceApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      }
+    }
+    </script>
+
+    <!-- Preconnect to External Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Mobile Optimization -->
+    <meta name="theme-color" content="#4f46e5">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- External Scripts with defer -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body class="bg-gray-50 font-inter">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-indigo-800 mb-2">Income Tax Calculator</h1>
+            <p class="text-gray-600">Calculate Indian income tax for various regimes and financial years</p>
+        </header>
+
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8 no-hover">
+            <!-- Regime & Financial Year Selection -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 pb-5 border-b border-dashed border-gray-200">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Financial Year</label>
+                    <select id="financial-year" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="2025-26">FY 2025-26 (AY 2026-27)</option>
+                        <option value="2024-25">FY 2024-25 (AY 2025-26)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Tax Regime</label>
+                    <select id="tax-regime" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="new">New Regime</option>
+                        <option value="old">Old Regime</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <label for="income" class="block text-sm font-medium text-gray-700 mb-1">Annual Income (₹ in Lakhs)</label>
+                <div class="mt-1 relative rounded-md shadow-sm">
+                    <input type="number" id="income" name="income" 
+                        class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-3 pr-12 py-3 sm:text-lg border-gray-300 rounded-md"
+                        placeholder="12.75" min="0" step="0.01">
+                    <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                        <span class="text-gray-500 sm:text-sm">Lakhs</span>
+                    </div>
+                </div>
+                
+                <!-- Income Slider with Visual Feedback -->
+                <div class="mt-4 mb-2">
+                    <div class="flex justify-between text-xs text-gray-500 mb-1">
+                        <span>₹0</span>
+                        <span>₹1Cr</span>
+                    </div>
+                    <div class="relative">
+                        <input type="range" id="income-slider" class="w-full h-2 appearance-none cursor-pointer" 
+                            min="0" max="100" step="1" value="0">
+                        <div id="slider-tooltip" class="absolute -top-8 transform -translate-x-1/2 bg-indigo-600 text-white text-xs py-1 px-2 rounded opacity-0 pointer-events-none transition-opacity">
+                            <span id="tooltip-value">₹0</span>
+                            <div class="tooltip-arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-0">
+                <label class="inline-flex items-center">
+                    <input type="checkbox" id="is-salaried" name="is-salaried" class="form-checkbox h-5 w-5 text-indigo-600" checked>
+                    <span class="ml-2 text-gray-700">I am a salaried employee (<span id="standard-deduction-text">₹75,000</span> standard deduction)</span>
+                </label>
+            </div>
+
+            <div class="mt-4 flex items-center justify-between">
+                <button id="toggle-deductions-btn" class="text-sm text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                    Show Additional Deductions
+                </button>
+            </div>
+
+            <div id="deductions-section" class="hidden mt-4 border-t border-dashed border-gray-200 pt-4">
+                <h3 class="text-md font-medium text-gray-700 mb-3">Available Deductions Under <span id="regime-type-text">New</span> Regime</h3>
+                
+                <div id="new-regime-deductions" class="space-y-4">
+                    <!-- Family Pension Deduction -->
+                    <div>
+                        <label class="inline-flex items-center mb-1">
+                            <input type="checkbox" id="has-family-pension" class="form-checkbox h-5 w-5 text-indigo-600">
+                            <span class="ml-2 text-gray-700">Family Pension (₹25,000 or 1/3 of pension, whichever is less)</span>
+                        </label>
+                        <div id="family-pension-amount-wrapper" class="hidden mt-2 pl-7">
+                            <input type="number" id="family-pension-amount" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm" placeholder="Enter amount in ₹ (e.g., 100000)">
+                        </div>
+                    </div>
+                    
+                    <!-- Education Loan Interest Deduction -->
+                    <div>
+                        <label class="inline-flex items-center mb-1">
+                            <input type="checkbox" id="has-education-loan" class="form-checkbox h-5 w-5 text-indigo-600">
+                            <span class="ml-2 text-gray-700">Interest on Education Loan (Section 80E)</span>
+                        </label>
+                        <div id="education-loan-amount-wrapper" class="hidden mt-2 pl-7">
+                            <input type="number" id="education-loan-amount" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm" placeholder="Enter amount in ₹ (e.g., 50000)">
+                        </div>
+                    </div>
+                    
+                    <!-- Employer Contribution to NPS/PF -->
+                    <div>
+                        <label class="inline-flex items-center mb-1">
+                            <input type="checkbox" id="has-employer-contribution" class="form-checkbox h-5 w-5 text-indigo-600">
+                            <span class="ml-2 text-gray-700">Employer Contribution to PF/NPS (up to 10% of salary)</span>
+                        </label>
+                        <div id="employer-contribution-wrapper" class="hidden mt-2 pl-7">
+                            <input type="number" id="employer-contribution-amount" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm" placeholder="Enter amount in ₹ (e.g., 75000)">
+                            <p class="text-xs text-gray-500 mt-1">Only 10% of your salary will be considered as deduction</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Old Regime Deductions Section -->
+                <div id="old-regime-deductions" class="space-y-4 hidden">
+                    <!-- Section 80C Deductions -->
+                    <div>
+                        <label class="inline-flex items-center mb-1">
+                            <input type="checkbox" id="has-section-80c" class="form-checkbox h-5 w-5 text-indigo-600">
+                            <span class="ml-2 text-gray-700">Section 80C Investments (₹1.5 lakh max)</span>
+                        </label>
+                        <div id="section-80c-amount-wrapper" class="hidden mt-2 pl-7">
+                            <input type="number" id="section-80c-amount" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm" placeholder="Enter amount in ₹ (max: 150000)">
+                            <p class="text-xs text-gray-500 mt-1">Includes PPF, ELSS, Life Insurance, etc.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Section 80D Deductions -->
+                    <div>
+                        <label class="inline-flex items-center mb-1">
+                            <input type="checkbox" id="has-section-80d" class="form-checkbox h-5 w-5 text-indigo-600">
+                            <span class="ml-2 text-gray-700">Health Insurance Premium (Section 80D)</span>
+                        </label>
+                        <div id="section-80d-amount-wrapper" class="hidden mt-2 pl-7">
+                            <input type="number" id="section-80d-self-amount" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm mb-2" placeholder="Self & Family (max: 25000)">
+                            <input type="number" id="section-80d-parents-amount" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm" placeholder="Parents (max: 50000 for senior citizens)">
+                        </div>
+                    </div>
+                    
+                    <!-- Home Loan Interest Deduction -->
+                    <div>
+                        <label class="inline-flex items-center mb-1">
+                            <input type="checkbox" id="has-home-loan-interest" class="form-checkbox h-5 w-5 text-indigo-600">
+                            <span class="ml-2 text-gray-700">Home Loan Interest (Section 24)</span>
+                        </label>
+                        <div id="home-loan-interest-wrapper" class="hidden mt-2 pl-7">
+                            <input type="number" id="home-loan-interest-amount" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm" placeholder="Enter amount in ₹ (max: 200000)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="results" class="bg-white rounded-xl shadow-lg p-6 mb-8 hidden no-hover">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Tax Calculation Results</h2>
+            
+            <div class="bg-gradient-to-r from-indigo-50 to-green-50 rounded-lg p-5 border border-indigo-100 mb-6">
+                <h3 class="text-lg font-medium text-gray-800 mb-3">Financial Summary</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Tax Liability Section -->
+                    <div class="bg-white bg-opacity-70 rounded-lg p-4 border border-indigo-100">
+                        <div class="flex justify-between items-baseline mb-2">
+                            <h4 class="font-medium text-indigo-800">Tax Liability</h4>
+                            <span id="tax-amount" class="text-xl font-bold text-indigo-600">₹0</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-sm text-gray-600">Based on income & deductions</p>
+                            <span id="effective-rate" class="text-sm font-medium text-indigo-600 text-right">0% effective rate</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Monthly Take-Home Section -->
+                    <div class="bg-white bg-opacity-70 rounded-lg p-4 border border-green-100">
+                        <div class="flex justify-between items-baseline mb-2">
+                            <h4 class="font-medium text-green-800">Monthly Take-Home</h4>
+                            <span id="monthly-salary" class="text-xl font-bold text-green-600">₹0</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-sm text-gray-600">After-tax income</p>
+                            <span id="annual-take-home" class="text-sm font-medium text-green-600 text-right">₹0 annually</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-lg font-medium text-gray-800">Your Tax Breakdown</h3>
+                    <button id="toggle-tax-details" class="text-sm text-indigo-600 hover:text-indigo-800 transition-colors">
+                        Show Details
+                    </button>
+                </div>
+                <div id="tax-breakdown" class="text-sm space-y-2 bg-gray-50 p-4 rounded-lg"></div>
+                
+                <div id="tax-details-section" class="mt-4 hidden">
+                    <h4 class="text-md font-medium text-gray-700 mb-2">Tax Calculation by Slabs</h4>
+                    <div id="tax-slab-details" class="bg-white border border-gray-200 rounded-lg p-3 text-sm"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Example Tax Preview Cards -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8 no-hover">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Example Tax Calculations</h2>
+            <p class="text-sm text-gray-600 mb-5">See how much tax you would pay at different income levels:</p>
+            
+            <div id="example-cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                <!-- Cards will be inserted here -->
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8 no-hover">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Tax vs Income Graph</h2>
+            <p class="text-sm text-gray-600 mb-3">Estimated tax liability for different income levels (assuming salaried employee)</p>
+            <div class="bg-gray-50 p-4 rounded-lg">
+                <canvas id="tax-chart" height="250"></canvas>
+            </div>
+        </div>
+            
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8 no-hover">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Tax Slabs</h2>
+            <div class="flex items-center mb-3">
+                <span class="text-gray-600 mr-2">Showing slabs for:</span>
+                <span id="tax-slabs-regime-year" class="font-medium text-indigo-600">New Regime, FY 2025-26</span>
+            </div>
+            <div class="overflow-x-auto">
+                <table id="tax-slabs-table" class="min-w-full divide-y divide-gray-200 tax-slabs-table">
+                    <thead class="bg-white bg-opacity-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Income Range (₹)</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tax Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white bg-opacity-50 divide-y divide-gray-200">
+                        <!-- Tax slab rows will be populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- New FAQ Section -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8 no-hover">
+            <h2 class="text-xl font-semibold text-gray-800 mb-6 text-center">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <div class="faq-item">
+                    <button class="faq-question w-full flex justify-between items-center text-left py-3 px-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
+                        <span class="font-medium text-gray-800">What is the Income Tax Calculator?</span>
+                        <svg class="w-5 h-5 text-gray-600 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-4 pt-2 pb-4">
+                        <p class="text-gray-600">This Income Tax Calculator is a free tool to calculate taxes on your income using the most up-to-date tax brackets for FY 2025-26. It helps you understand your tax liability under the new tax regime.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question w-full flex justify-between items-center text-left py-3 px-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
+                        <span class="font-medium text-gray-800">How can I use this Income Tax Calculator?</span>
+                        <svg class="w-5 h-5 text-gray-600 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-4 pt-2 pb-4">
+                        <p class="text-gray-600">Simply enter your annual income in lakhs (e.g., enter 12.75 for ₹12,75,000) and specify if you're a salaried employee. Your tax calculation will update automatically as you make changes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question w-full flex justify-between items-center text-left py-3 px-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
+                        <span class="font-medium text-gray-800">What are the tax regimes available in India?</span>
+                        <svg class="w-5 h-5 text-gray-600 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-4 pt-2 pb-4">
+                        <p class="text-gray-600 mb-2">India offers two primary tax regimes for individuals:</p>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                            <li><strong>Old Regime:</strong> Higher tax rates but offers numerous deductions and exemptions (e.g., 80C, 80D, HRA)</li>
+                            <li><strong>New Regime:</strong> Lower tax rates with fewer deductions, designed to simplify tax filing</li>
+                        </ul>
+                        <p class="mt-2 text-gray-600">This calculator allows you to compare both regimes to determine which is more beneficial for your situation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question w-full flex justify-between items-center text-left py-3 px-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
+                        <span class="font-medium text-gray-800">What are the tax slabs for different regimes?</span>
+                        <svg class="w-5 h-5 text-gray-600 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-4 pt-2 pb-4">
+                        <p class="text-gray-600 mb-2">The tax slabs vary by regime and financial year. For FY 2025-26:</p>
+                        
+                        <p class="font-medium mt-3 mb-1 text-gray-700">New Regime FY 2025-26:</p>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                            <li>₹0 to ₹4,00,000: 0%</li>
+                            <li>₹4,00,001 to ₹8,00,000: 5%</li>
+                            <li>₹8,00,001 to ₹12,00,000: 10%</li>
+                            <li>₹12,00,001 to ₹16,00,000: 15%</li>
+                            <li>₹16,00,001 to ₹20,00,000: 20%</li>
+                            <li>₹20,00,001 to ₹24,00,000: 25%</li>
+                            <li>Above ₹24,00,000: 30%</li>
+                        </ul>
+                        <p class="text-gray-600 mt-2">A rebate of up to ₹60,000 under Section 87A is available if your net taxable income is up to ₹12,00,000.</p>
+                        
+                        <p class="font-medium mt-3 mb-1 text-gray-700">Old Regime FY 2025-26:</p>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                            <li>₹0 to ₹2,50,000: 0%</li>
+                            <li>₹2,50,001 to ₹5,00,000: 5%</li>
+                            <li>₹5,00,001 to ₹10,00,000: 20%</li>
+                            <li>Above ₹10,00,000: 30%</li>
+                        </ul>
+                        <p class="text-gray-600 mt-2">A rebate of up to ₹12,500 under Section 87A is available if your net taxable income is up to ₹5,00,000.</p>
+                        
+                        <p class="text-gray-600 mt-3">The calculator automatically applies the appropriate slabs based on your selected regime and financial year.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question w-full flex justify-between items-center text-left py-3 px-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
+                        <span class="font-medium text-gray-800">What deductions are available under the new tax regime?</span>
+                        <svg class="w-5 h-5 text-gray-600 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-4 pt-2 pb-4">
+                        <p class="text-gray-600">The new tax regime allows the following deductions:</p>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-1 mt-2">
+                            <li><strong>Standard Deduction:</strong> ₹75,000 for salaried employees</li>
+                            <li><strong>Family Pension Deduction:</strong> Up to ₹25,000 or 1/3 of the family pension, whichever is less</li>
+                            <li><strong>Interest on Education Loan (Section 80E):</strong> No upper limit on interest paid for higher education loans</li>
+                            <li><strong>Employer Contribution to Recognized Funds:</strong> Up to 10% of salary for employer contributions to PF, NPS, and other approved pension funds</li>
+                        </ul>
+                        <p class="mt-2 text-gray-600">Common deductions like those under Section 80C (PPF, life insurance) and Section 80D (health insurance) are not available under the new tax regime.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question w-full flex justify-between items-center text-left py-3 px-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
+                        <span class="font-medium text-gray-800">What is the standard deduction for FY 2025-26?</span>
+                        <svg class="w-5 h-5 text-gray-600 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-4 pt-2 pb-4">
+                        <p class="text-gray-600">The standard deduction for salaried individuals under the new tax regime for FY 2025-26 is ₹75,000. This amount is automatically deducted from your taxable income if you are a salaried employee.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question w-full flex justify-between items-center text-left py-3 px-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
+                        <span class="font-medium text-gray-800">Can I share my tax calculation with others?</span>
+                        <svg class="w-5 h-5 text-gray-600 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-4 pt-2 pb-4">
+                        <p class="text-gray-600">Yes! After calculating your tax, you'll see a "Share Result" button below the calculation. Click it to copy a link that you can share with others. When they open the link, they'll see the same tax calculation with your income and settings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-8 text-center text-gray-500 text-sm">
+            <p class="mb-2">This calculator is for informational purposes only. Tax laws are subject to change.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html> 

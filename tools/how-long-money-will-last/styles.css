@@ -1,0 +1,84 @@
+/* Custom styles for Financial Runway Calculator */
+
+/* Input field styling */
+input[type="number"],
+input[type="text"],
+input[type="date"] {
+  appearance: none;
+  outline: none;
+}
+
+/* Remove number input spinner */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Custom range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #4f46e5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4f46e5;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+/* Expense item styling */
+.expense-item {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Progress bar colors */
+.status-green {
+  background-color: #10b981;
+}
+
+.status-yellow {
+  background-color: #f59e0b;
+}
+
+.status-red {
+  background-color: #ef4444;
+}
+
+/* Asset toggle button styling */
+.asset-toggle-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+} 

@@ -1,0 +1,11 @@
+# Redirects for Netlify
+# These redirects ensure that the SPA routing works correctly
+
+# Project redirects
+/income-tax-calculator/*  /income-tax-calculator/index.html  200
+/will-my-money-last/*     /will-my-money-last/index.html     200
+/real-estate-return-calculator/*  /real-estate-return-calculator/index.html  200
+/gmail-attachment-downloader/*    /gmail-attachment-downloader/index.html    200
+
+# Fallback to index.html for all other routes
+/*  /index.html  200 
