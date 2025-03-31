@@ -6,7 +6,7 @@ url: "https://mathtowealth.com"
 permalink: pretty
 markdown: kramdown
 exclude: ["README.md", "Gemfile", "Gemfile.lock", "vendor"]
-include: ["_redirects", ".nojekyll"]
+include: ["_redirects"]
 
 # GitHub Pages settings
 kramdown:
@@ -17,4 +17,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-seo-tag 
+  - jekyll-seo-tag
+
+# Force GitHub to process this as a Jekyll site
+future: true 
