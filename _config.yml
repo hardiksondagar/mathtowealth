@@ -1,0 +1,20 @@
+name: Math to Wealth
+title: Math to Wealth - Financial Tools Suite
+description: A collection of financial calculators and tools to help you make better financial decisions
+baseurl: ""
+url: "https://mathtowealth.com"
+permalink: pretty
+markdown: kramdown
+exclude: ["README.md", "Gemfile", "Gemfile.lock"]
+include: ["_redirects", ".nojekyll"]
+
+# GitHub Pages settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag 
