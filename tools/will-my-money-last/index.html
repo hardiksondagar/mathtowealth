@@ -13,6 +13,45 @@ google_analytics: |
     gtag('js', new Date());
     gtag('config', 'G-T96F7YCF84');
   </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-11CYBTV51S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-11CYBTV51S');
+  </script>
+  <script src="../shared/analytics.js"></script>
+  <script>
+    // Track when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        trackToolUsage('Will My Money Last Calculator', 'Page View');
+    });
+
+    // Track when calculator is used
+    function calculateRetirement() {
+        // ... existing calculation code ...
+        
+        // Track the calculation
+        trackCalculatorUsage('Will My Money Last Calculator', true);
+        
+        // Show results
+        showResults();
+    }
+
+    // Track when results are viewed
+    function showResults() {
+        // ... existing show results code ...
+        
+        trackResultsView('Will My Money Last Calculator');
+    }
+
+    // Track when user shares results
+    function shareResults(method) {
+        // ... existing share code ...
+        
+        trackShare('Will My Money Last Calculator', method);
+    }
+  </script>
 head_content: |
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
