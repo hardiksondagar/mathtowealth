@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-11CYBTV51S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-11CYBTV51S');
+    </script>
+    <title>Will Rohit's Money Last Until Age 90? A Retirement Case Study | Math To Wealth</title>
+    <meta name="description" content="Follow the retirement journey of Rohit, a 45-year-old IT professional planning early retirement at 55. Learn how his portfolio might last through retirement.">
+    <meta name="keywords" content="retirement planning, early retirement, financial independence, FIRE movement, retirement calculator, retirement India, retirement case study">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@2.0.0"></script>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mathtowealth.com/blogs/will-rohits-money-last-until-90.html">
+    <meta property="og:title" content="Will Rohit's Money Last Until Age 90? A Retirement Case Study">
+    <meta property="og:description" content="Follow the retirement journey of Rohit, a 45-year-old IT professional planning early retirement at 55. Learn how his portfolio might last through retirement.">
+    <meta property="og:image" content="https://mathtowealth.com/assets/images/retirement-case-study.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mathtowealth.com/blogs/will-rohits-money-last-until-90.html">
+    <meta property="twitter:title" content="Will Rohit's Money Last Until Age 90? A Retirement Case Study">
+    <meta property="twitter:description" content="Follow the retirement journey of Rohit, a 45-year-old IT professional planning early retirement at 55. Learn how his portfolio might last through retirement.">
+    <meta property="twitter:image" content="https://mathtowealth.com/assets/images/retirement-case-study.jpg">
+    <style>
+        .highlight-box {
+            background-color: #EBF4FF;
+            border-left: 4px solid #4F46E5;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
+        .number-highlight {
+            color: #4F46E5;
+            font-weight: 700;
+        }
+        .chart-container {
+            position: relative;
+            margin: auto;
+            height: 400px;
+            width: 100%;
+        }
+        
+        /* Initially hide the updated scenario section until JS decides whether to show it */
+        #updatedScenarioSection {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-8 py-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="/" class="flex items-center">
+                    <i class="fas fa-chart-line text-indigo-600 text-3xl mr-3"></i>
+                    <h1 class="text-2xl font-bold text-gray-800">Math To Wealth</h1>
+                </a>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="/" class="text-gray-600 hover:text-indigo-600 transition">Home</a></li>
+                    <li><a href="/#tools" class="text-gray-600 hover:text-indigo-600 transition">Tools</a></li>
+                    <li><a href="/blogs" class="text-indigo-600 font-medium">Blogs</a></li>
+                    <li><a href="/#about" class="text-gray-600 hover:text-indigo-600 transition">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-8 py-12 max-w-4xl">
+        <!-- Article Header Section -->
+        <div class="mb-12">
+            <div class="flex items-center mb-4">
+                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mr-3">Retirement Planning</span>
+                <span class="text-gray-500">July 14, 2023</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Will Rohit's Money Last Until Age 90? A Retirement Case Study</h1>
+            <p class="text-xl text-gray-600 mb-6">Follow the journey of an IT professional planning early retirement and see if his investments will sustain him through his golden years.</p>
+            
+            <div class="border-b border-gray-200 mb-6"></div>
+            
+            <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                    <span class="text-indigo-700 font-bold">MT</span>
+                </div>
+                <div>
+                    <p class="font-medium text-gray-800">Written by Math To Wealth Team</p>
+                    <p class="text-sm text-gray-500">8 min read</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Image -->
+        <div class="mb-10">
+            <img src="https://images.unsplash.com/photo-1593672755342-741a7f868732?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Retirement planning illustration" class="rounded-xl w-full h-auto object-cover shadow-md">
+            <p class="text-sm text-gray-500 mt-2 text-center">Early retirement requires careful financial planning and projections</p>
+        </div>
+
+        <!-- Article Content -->
+        <article class="prose prose-lg max-w-none">
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Meet Rohit: Planning for Early Retirement</h2>
+                <p class="mb-4">Rohit Patel is a 45-year-old IT professional working in Bengaluru. After a successful 20+ year career in the technology sector, he's eager to retire early at age 55 and enjoy life on his own terms. But a critical question remains: <strong>Will his money last until he turns 90?</strong></p>
+                
+                <div class="highlight-box">
+                    <h3 class="font-bold text-gray-800 mb-2">Rohit's Financial Snapshot</h3>
+                    <ul class="space-y-2">
+                        <li><span class="font-medium">Age:</span> <span class="number-highlight" id="age-value"></span></li>
+                        <li><span class="font-medium">Current Monthly Salary:</span> <span class="number-highlight" id="salary-value"></span></li>
+                        <li><span class="font-medium">Planned Retirement Age:</span> <span class="number-highlight" id="retirement-age-value"></span></li>
+                        <li><span class="font-medium">Current Total Assets:</span> <span class="number-highlight" id="assets-value"></span></li>
+                        <li><span class="font-medium">Current Monthly Expenses:</span> <span class="number-highlight" id="expenses-value"></span></li>
+                    </ul>
+                </div>
+                
+                <p>Rohit has been diligently saving and investing for years. Let's break down his current asset allocation:</p>
+            </div>
+            
+            <div class="mb-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Rohit's Current Asset Allocation</h2>
+                
+                <div class="overflow-x-auto" id="assetAllocationTableContainer">
+                    <!-- This will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="mb-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Rohit's Future Financial Commitments</h2>
+                
+                <p class="mb-4">Rohit has several major expenses planned in the coming years:</p>
+                
+                <div class="overflow-x-auto" id="expensesTableContainer">
+                    <!-- This will be populated by JavaScript -->
+                </div>
+                
+                <p class="mt-4">These large expenses will significantly impact Rohit's financial runway if not planned for properly.</p>
+            </div>
+            
+            <div class="mb-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">The Retirement Calculation</h2>
+                
+                <p class="mb-4">Using our <a href="../tools/will-my-money-last" class="text-indigo-600 hover:text-indigo-800 font-medium">Financial Runway Calculator</a>, we can project Rohit's financial future based on his current situation.</p>
+                
+                <div class="highlight-box">
+                    <h3 class="font-bold text-gray-800 mb-2">Key Projection Parameters</h3>
+                    <ul class="space-y-2">
+                        <li><span class="font-medium">Monthly Income:</span> <span class="number-highlight" id="monthly-income-value">₹2,50,000</span></li>
+                        <li><span class="font-medium">Income Growth Rate:</span> <span class="number-highlight" id="income-growth-value">7% annually</span></li>
+                        <li><span class="font-medium">Monthly Expenses:</span> <span class="number-highlight" id="monthly-expenses-param-value">₹1,20,000</span></li>
+                        <li><span class="font-medium">Inflation Rate:</span> <span class="number-highlight" id="inflation-rate-value">6% annually</span></li>
+                        <li><span class="font-medium">Weighted Portfolio Return:</span> <span class="number-highlight" id="portfolio-return-value">9.2% annually</span></li>
+                    </ul>
+                </div>
+                
+                <p class="mb-6">Let's visualize how Rohit's assets might grow and deplete over time:</p>
+                
+                <div class="chart-container">
+                    <canvas id="retirementChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="mb-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Analysis: Will Rohit's Money Last?</h2>
+                
+                <p class="mb-4">Based on our calculations, Rohit's financial situation looks promising, but with some important caveats:</p>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="font-bold text-gray-800 mb-3 text-xl">Results Summary</h3>
+                    
+                    <!-- Dynamic base scenario result -->
+                    <div id="baseScenarioResult">
+                        <!-- This will be populated by JavaScript -->
+                    </div>
+                    
+                    <div class="border-t border-gray-200 my-4"></div>
+                    
+                    <!-- Dynamic base scenario metrics -->
+                    <div id="baseScenarioMetrics">
+                        <!-- This will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-10">
+                <!-- Dynamic recommendations section -->
+                <div id="recommendationsSection">
+                    <!-- This will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="mb-10" id="updatedScenarioSection">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Updated Scenario: Can Rohit Make It to <span data-dynamic="targetAge">90</span>?</h2>
+                
+                <p class="mb-4">If Rohit implements the recommendations above, let's see how his financial outlook changes:</p>
+                
+                <!-- Improved scenario projections -->
+                <div id="improvedScenarioProjections">
+                    <!-- This will be populated by JavaScript -->
+                </div>
+                
+                <div class="chart-container mt-6">
+                    <canvas id="improvedRetirementChart"></canvas>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md mt-6">
+                    <h3 class="font-bold text-gray-800 mb-3 text-xl">Updated Results</h3>
+                    
+                    <!-- Dynamic improved scenario result -->
+                    <div id="improvedScenarioResult">
+                        <!-- This will be populated by JavaScript -->
+                    </div>
+                    
+                    <div class="border-t border-gray-200 my-4"></div>
+                    
+                    <!-- Dynamic improved scenario metrics -->
+                    <div id="improvedScenarioMetrics">
+                        <!-- This will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Key Takeaways for Your Own Retirement Planning</h2>
+                
+                <p class="mb-4">Rohit's case study demonstrates several important principles applicable to anyone planning for retirement:</p>
+                
+                <ol class="list-decimal pl-6 space-y-3">
+                    <li><strong>Start Early:</strong> The power of compounding works best over longer time horizons. Rohit's 20+ years of disciplined investing built a substantial corpus.</li>
+                    <li><strong>Account for Inflation:</strong> At 6% annual inflation, expenses double roughly every 12 years. Your retirement planning must factor this in.</li>
+                    <li><strong>Plan for Major Expenses:</strong> One-time large expenses can significantly impact your financial runway if not accounted for separately.</li>
+                    <li><strong>Optimize Asset Allocation:</strong> The right investment mix can dramatically extend your financial runway through better returns.</li>
+                    <li><strong>Consider Post-Retirement Income:</strong> Even modest income after retirement can have an outsized impact on how long your money lasts.</li>
+                </ol>
+            </div>
+            
+            <div class="bg-indigo-50 p-6 rounded-xl">
+                <h2 class="text-xl font-bold text-indigo-800 mb-2">Try Our Retirement Calculator</h2>
+                <p class="text-indigo-700 mb-4">Want to create your own retirement plan? Use our free Financial Runway Calculator to see how long your money might last.</p>
+                <a href="../tools/will-my-money-last" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition shadow-md font-medium">
+                    Calculate Your Financial Runway
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </article>
+        
+        <!-- Share and Comment Section -->
+        <div class="mt-12 border-t border-gray-200 pt-8">
+            <div class="flex justify-between items-center mb-8">
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">Share this article</h3>
+                    <div class="flex space-x-3">
+                        <a href="#" class="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 text-white p-2 rounded-full hover:bg-blue-500 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-green-500 text-white p-2 rounded-full hover:bg-green-600 transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="bg-blue-700 text-white p-2 rounded-full hover:bg-blue-800 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <button class="flex items-center text-gray-500 hover:text-indigo-600 transition">
+                        <i class="far fa-bookmark mr-2"></i>
+                        Save for later
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Related Articles -->
+        <div class="mt-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">Related Articles</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Placeholder for future article -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 opacity-50">
+                    <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-image text-gray-400 text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Tax Planning</span>
+                            <span class="text-gray-500 text-sm ml-2">Coming Soon</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Optimizing Your Tax Strategy for Early Retirement</h3>
+                        <p class="text-gray-600 mb-4">Learn how to structure your investments and income to minimize tax burden during retirement.</p>
+                        <div class="flex items-center text-gray-400 font-medium">
+                            Coming Soon
+                            <i class="fas fa-clock ml-2 text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Placeholder for future article -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 opacity-50">
+                    <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-image text-gray-400 text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Retirement</span>
+                            <span class="text-gray-500 text-sm ml-2">Coming Soon</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">The 4% Rule: Does It Work in the Indian Context?</h3>
+                        <p class="text-gray-600 mb-4">A critical examination of the famous retirement withdrawal strategy and how it applies to Indian retirees.</p>
+                        <div class="flex items-center text-gray-400 font-medium">
+                            Coming Soon
+                            <i class="fas fa-clock ml-2 text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-12 mt-16">
+        <div class="container mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-line text-indigo-400 text-2xl mr-3"></i>
+                        <h2 class="text-xl font-bold text-white">Math To Wealth</h2>
+                    </div>
+                    <p class="text-gray-400 mb-6">Financial tools designed to help you make smarter decisions and build long-term wealth.</p>
+                    <div class="flex space-x-4 social-icons">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-white text-lg">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="/#tools" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Our Tools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/blogs" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Blogs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/#about" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../privacy-policy.html" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../terms-of-service.html" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Terms of Service
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-white text-lg">Tools</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="../tools/income-tax-calculator" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Income Tax Calculator
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../tools/will-my-money-last" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Retirement Calculator
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../tools/real-estate-return-calculator" class="text-gray-400 hover:text-indigo-400 transition flex items-center">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                                Real Estate Calculator
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-8 text-center text-gray-400">
+                <p>&copy; <span id="current-year">2023</span> Math To Wealth. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Define all variables for easy manipulation
+            // Basic profile
+            const currentAge = 45;
+            const retirementAge = 55;
+            const targetAge = 90;
+            const yearsToProject = targetAge - currentAge + 1;
+            
+            // Define asset allocation first
+            const assetAllocation = [
+                { name: "Cash & Bank", amount: 1500000, return: 0.04 },
+                { name: "Fixed Deposits", amount: 1000000, return: 0.07 },
+                { name: "Equity (Stocks/MF)", amount: 5000000, return: 0.12 },
+                { name: "Gold", amount: 1000000, return: 0.08 },
+                { name: "Real Estate (Excluding Primary Home)", amount: 0, return: 0.09 }
+            ];
+            
+            // Calculate total assets from allocation
+            const initialAssets = assetAllocation.reduce((total, asset) => total + asset.amount, 0);
+            
+            // Calculate weighted annual return
+            const baseAnnualReturn = assetAllocation.reduce((weighted, asset) => {
+                return weighted + (asset.amount / initialAssets) * asset.return;
+            }, 0);
+            
+            // Format in Indian style with commas (e.g., ₹15,00,000)
+            const formatIndianCurrency = (amount) => {
+                const numStr = amount.toString();
+                let formattedNum = '';
+                
+                // Handle the case for numbers less than 1000
+                if (numStr.length <= 3) {
+                    return `₹${numStr}`;
+                }
+                
+                // Handle thousands and above
+                let lastThree = numStr.substring(numStr.length - 3);
+                let remaining = numStr.substring(0, numStr.length - 3);
+                
+                // Add commas at every 2 digits after first 3
+                while (remaining.length > 0) {
+                    formattedNum = ',' + remaining.substring(Math.max(0, remaining.length - 2)) + formattedNum;
+                    remaining = remaining.substring(0, Math.max(0, remaining.length - 2));
+                }
+                
+                return `₹${formattedNum.substring(1)}${lastThree}`;
+            };
+            
+            // Populate asset allocation table
+            let tableHTML = `
+                <table class="min-w-full divide-y divide-gray-200 border border-gray-200 rounded-lg">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Asset Class</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Amount (₹)</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Expected Annual Return</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+            `;
+            
+            // Add rows for each asset class
+            assetAllocation.forEach(asset => {
+                tableHTML += `
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">${asset.name}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">${formatIndianCurrency(asset.amount)}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">${(asset.return * 100).toFixed(1)}%</td>
+                    </tr>
+                `;
+            });
+            
+            // Add total row
+            tableHTML += `
+                    <tr class="bg-indigo-50">
+                        <td class="px-6 py-4 whitespace-nowrap font-medium">Total</td>
+                        <td class="px-6 py-4 whitespace-nowrap font-medium">${formatIndianCurrency(initialAssets)}</td>
+                        <td class="px-6 py-4 whitespace-nowrap font-medium">~${(baseAnnualReturn * 100).toFixed(1)}% (weighted)</td>
+                    </tr>
+                </tbody>
+            </table>
+            `;
+            
+            document.getElementById('assetAllocationTableContainer').innerHTML = tableHTML;
+            
+            const monthlySalary = 250000;
+            const monthlyExpenses = 120000;
+            const monthlySavings = monthlySalary - monthlyExpenses; // 130000
+            const annualInflation = 0.07; // 7% - increased from 6%
+            
+            // Define expenses with categories
+            const expenses = [
+                // One-time expenses
+                {
+                    category: "Family",
+                    name: "Daughter's Higher Education",
+                    type: "one-time",
+                    amount: 5000000, // 50 Lakhs
+                    yearFromNow: 2 // 2 years
+                },
+                {
+                    category: "Family",
+                    name: "Daughter's Wedding",
+                    type: "one-time",
+                    amount: 2500000, // 25 Lakhs
+                    yearFromNow: 7 // 7 years
+                },
+                {
+                    category: "Lifestyle",
+                    name: "World Tour with Wife",
+                    type: "one-time",
+                    amount: 2000000, // 20 Lakhs
+                    yearFromNow: 10 // At retirement
+                },
+                
+                // Recurring expenses
+                {
+                    category: "Health",
+                    name: "Healthcare Costs",
+                    type: "recurring-annual",
+                    amount: 300000, // 3 Lakhs per year
+                    startYearFromRetirement: 20, // Starts when Rohit is 65
+                    inflationAdjusted: true,
+                    improvementFactor: 0.75 // In improved scenario, costs are 75% of base
+                },
+                
+                // Monthly expenses are already defined as monthlyExpenses variable
+                // They could also be broken down further into categories if needed
+            ];
+            
+            // Generate and populate expenses table (only one-time expenses)
+            let expensesTableHTML = `
+                <table class="min-w-full divide-y divide-gray-200 border border-gray-200 rounded-lg">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Expense</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Amount (₹)</th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Expected In</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+            `;
+            
+            // Filter one-time expenses and sort by yearFromNow
+            const oneTimeExpenses = expenses
+                .filter(expense => expense.type === "one-time")
+                .sort((a, b) => a.yearFromNow - b.yearFromNow);
+            
+            // Current year for expected year calculation
+            const currentYear = new Date().getFullYear();
+            
+            // Add rows for each one-time expense
+            oneTimeExpenses.forEach(expense => {
+                const expectedYear = currentYear + expense.yearFromNow;
+                expensesTableHTML += `
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">${expense.category}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">${expense.name}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">${formatIndianCurrency(expense.amount)}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">${expense.yearFromNow} years (${expectedYear})</td>
+                    </tr>
+                `;
+            });
+            
+            // Close the table
+            expensesTableHTML += `
+                    </tbody>
+                </table>
+            `;
+            
+            // Populate the expenses table
+            document.getElementById('expensesTableContainer').innerHTML = expensesTableHTML;
+            
+            // Improved scenario parameters
+            const improvedMonthlySavings = monthlySavings + 40000; // Additional 40K savings
+            const improvedAnnualReturn = 0.095; // 9.5% - reduced from 10.5%
+            const reducedMonthlyExpenses = 100000; // Reduced from 120K
+            const partTimeMonthlyIncome = 50000;
+            const partTimeYears = 5;
+            
+            // Generate data points with annual increments
+            const labels = Array.from({length: yearsToProject}, (_, i) => `Age ${currentAge + i}`);
+            
+            // Base scenario - Chart 1
+            const baseCtx = document.getElementById('retirementChart').getContext('2d');
+            const baseAssets = [];
+            let assets = initialAssets;
+            
+            console.log('--- BASE SCENARIO DATA ---');
+            console.log('Starting assets: ₹' + (assets/10000000).toFixed(2) + ' Cr');
+            
+            // Income phase (until retirement) with correct monthly savings
+            const yearsToRetirement = retirementAge - currentAge;
+            for (let i = 0; i < yearsToRetirement; i++) {
+                // Apply annual return and add savings
+                assets = assets * (1 + baseAnnualReturn) + (monthlySavings * 12);
+                
+                // Account for one-time expenses during pre-retirement
+                const oneTimeExpensesThisYear = expenses.filter(expense => 
+                    expense.type === "one-time" && 
+                    expense.yearFromNow === i &&
+                    expense.yearFromNow < yearsToRetirement
+                );
+                
+                oneTimeExpensesThisYear.forEach(expense => {
+                    console.log(`Year ${i+1}: Deducting ${expense.name}: ₹${expense.amount/10000000} Cr`);
+                    assets -= expense.amount;
+                });
+                
+                baseAssets.push(assets);
+                console.log(`Year ${i+1} (Age ${currentAge+i+1}): Assets = ₹${(assets/10000000).toFixed(2)} Cr`);
+            }
+            
+            // Account for one-time expenses at retirement
+            const retirementExpenses = expenses.filter(expense => 
+                expense.type === "one-time" && 
+                expense.yearFromNow === yearsToRetirement
+            );
+            
+            retirementExpenses.forEach(expense => {
+                console.log(`At retirement: Deducting ${expense.name}: ₹${expense.amount/10000000} Cr`);
+                assets -= expense.amount;
+            });
+            
+            // Retirement phase with inflation-adjusted expenses
+            let annualExpenses = monthlyExpenses * 12; // Annual expenses
+            console.log(`Starting retirement with: ₹${(assets/10000000).toFixed(2)} Cr`);
+            console.log(`Initial annual expenses: ₹${(annualExpenses/100000).toFixed(2)} Lakhs`);
+            
+            // Track when assets deplete
+            let baseDepletionAge = null;
+            
+            for (let i = yearsToRetirement; i < yearsToProject; i++) {
+                annualExpenses = annualExpenses * (1 + annualInflation); // Apply inflation
+                
+                // Calculate yearly expenses including all recurring costs
+                let yearlyExpenses = annualExpenses;
+                
+                // Add recurring annual expenses like healthcare
+                const recurringExpensesThisYear = expenses.filter(expense => 
+                    expense.type === "recurring-annual" && 
+                    i >= yearsToRetirement + (expense.startYearFromRetirement || 0)
+                );
+                
+                recurringExpensesThisYear.forEach(expense => {
+                    let expenseAmount = expense.amount;
+                    
+                    // Apply inflation adjustment if specified
+                    if (expense.inflationAdjusted) {
+                        const yearsInflationApplied = i - yearsToRetirement - (expense.startYearFromRetirement || 0);
+                        expenseAmount = expense.amount * Math.pow((1 + annualInflation), yearsInflationApplied);
+                    }
+                    
+                    yearlyExpenses += expenseAmount;
+                    console.log(`Year ${i+1} (Age ${currentAge+i+1}): Added ${expense.name} of ₹${(expenseAmount/100000).toFixed(2)} Lakhs`);
+                });
+                
+                assets = assets * (1 + baseAnnualReturn) - yearlyExpenses; // Growth minus expenses
+                
+                // If assets run out
+                if (assets < 0) {
+                    assets = 0;
+                    if (baseDepletionAge === null) {
+                        baseDepletionAge = currentAge + i + 1;
+                        console.log(`Year ${i+1} (Age ${baseDepletionAge}): Assets depleted`);
+                    }
+                }
+                baseAssets.push(assets);
+                
+                if (i === yearsToRetirement || i === yearsToProject - 1 || (i % 5 === 0)) {
+                    console.log(`Year ${i+1} (Age ${currentAge+i+1}): Assets = ₹${(assets/10000000).toFixed(2)} Cr, Annual Expenses = ₹${(yearlyExpenses/100000).toFixed(2)} Lakhs`);
+                }
+            }
+            
+            // Format data for display in crores
+            const baseAssetsInCrores = baseAssets.map(val => val / 10000000);
+            
+            // Get value at retirement age (for display in article)
+            const peakAssetsAtRetirement = baseAssets[yearsToRetirement - 1] / 10000000;
+            
+            // Get monthly expenses at age 80
+            const expensesAtAge80 = monthlyExpenses * Math.pow(1 + annualInflation, 35); // 35 years from current age 45
+            
+            // Improved scenario - Chart 2
+            const improvedCtx = document.getElementById('improvedRetirementChart').getContext('2d');
+            const improvedAssets = [];
+            
+            // Starting with initial assets
+            let improvedAssetsValue = initialAssets;
+            
+            console.log('\n--- IMPROVED SCENARIO DATA ---');
+            console.log('Starting assets: ₹' + (improvedAssetsValue/10000000).toFixed(2) + ' Cr');
+            console.log(`Monthly savings: ₹${improvedMonthlySavings/1000}K (vs base: ₹${monthlySavings/1000}K)`);
+            console.log(`Annual return: ${improvedAnnualReturn*100}% (vs base: ${baseAnnualReturn*100}%)`);
+            
+            // Income phase (until retirement) with improved savings
+            for (let i = 0; i < yearsToRetirement; i++) {
+                // Apply improved annual return and add increased savings
+                improvedAssetsValue = improvedAssetsValue * (1 + improvedAnnualReturn) + (improvedMonthlySavings * 12);
+                
+                // Account for one-time expenses during pre-retirement
+                const oneTimeExpensesThisYear = expenses.filter(expense => 
+                    expense.type === "one-time" && 
+                    expense.yearFromNow === i &&
+                    expense.yearFromNow < yearsToRetirement
+                );
+                
+                oneTimeExpensesThisYear.forEach(expense => {
+                    console.log(`Year ${i+1}: Deducting ${expense.name}: ₹${expense.amount/10000000} Cr`);
+                    improvedAssetsValue -= expense.amount;
+                });
+                
+                improvedAssets.push(improvedAssetsValue);
+                console.log(`Year ${i+1} (Age ${currentAge+i+1}): Assets = ₹${(improvedAssetsValue/10000000).toFixed(2)} Cr`);
+            }
+            
+            // Account for one-time expenses at retirement
+            retirementExpenses.forEach(expense => {
+                console.log(`At retirement: Deducting ${expense.name}: ₹${expense.amount/10000000} Cr`);
+                improvedAssetsValue -= expense.amount;
+            });
+            
+            // Capture peak improved assets for article display
+            const improvedPeakAssetsAtRetirement = improvedAssetsValue / 10000000;
+            
+            // Reduced expenses and part-time income for set number of years
+            let improvedAnnualExpenses = reducedMonthlyExpenses * 12; // Reduced annual expenses
+            console.log(`Starting retirement with: ₹${(improvedAssetsValue/10000000).toFixed(2)} Cr`);
+            console.log(`Reduced annual expenses: ₹${(improvedAnnualExpenses/100000).toFixed(2)} Lakhs (vs base: ₹${(monthlyExpenses*12/100000).toFixed(2)} Lakhs)`);
+            console.log(`Part-time monthly income: ₹${partTimeMonthlyIncome/1000}K for ${partTimeYears} years`);
+            
+            // First years post-retirement with part-time income
+            for (let i = yearsToRetirement; i < yearsToRetirement + partTimeYears; i++) {
+                improvedAnnualExpenses = improvedAnnualExpenses * (1 + annualInflation); // Apply inflation
+                
+                // Calculate yearly expenses including all recurring costs
+                let yearlyImprovedExpenses = improvedAnnualExpenses;
+                
+                // Add recurring annual expenses like healthcare
+                const recurringExpensesThisYear = expenses.filter(expense => 
+                    expense.type === "recurring-annual" && 
+                    i >= yearsToRetirement + (expense.startYearFromRetirement || 0)
+                );
+                
+                recurringExpensesThisYear.forEach(expense => {
+                    let expenseAmount = expense.amount;
+                    
+                    // Apply improvement factor for improved scenario
+                    if (expense.improvementFactor) {
+                        expenseAmount = expenseAmount * expense.improvementFactor;
+                    }
+                    
+                    // Apply inflation adjustment if specified
+                    if (expense.inflationAdjusted) {
+                        const yearsInflationApplied = i - yearsToRetirement - (expense.startYearFromRetirement || 0);
+                        expenseAmount = expenseAmount * Math.pow((1 + annualInflation), yearsInflationApplied);
+                    }
+                    
+                    yearlyImprovedExpenses += expenseAmount;
+                });
+                
+                improvedAssetsValue = improvedAssetsValue * (1 + improvedAnnualReturn) - yearlyImprovedExpenses + (partTimeMonthlyIncome * 12);
+                improvedAssets.push(improvedAssetsValue);
+                
+                console.log(`Year ${i+1} (Age ${currentAge+i+1}): Assets = ₹${(improvedAssetsValue/10000000).toFixed(2)} Cr, Annual Expenses = ₹${(yearlyImprovedExpenses/100000).toFixed(2)} Lakhs (with part-time income)`);
+            }
+            
+            // Remaining retirement years
+            let improvedDepletionAge = null;
+            for (let i = yearsToRetirement + partTimeYears; i < yearsToProject; i++) {
+                improvedAnnualExpenses = improvedAnnualExpenses * (1 + annualInflation); // Apply inflation
+                
+                // Calculate yearly expenses including all recurring costs
+                let yearlyImprovedExpenses = improvedAnnualExpenses;
+                
+                // Add recurring annual expenses like healthcare
+                const recurringExpensesThisYear = expenses.filter(expense => 
+                    expense.type === "recurring-annual" && 
+                    i >= yearsToRetirement + (expense.startYearFromRetirement || 0)
+                );
+                
+                recurringExpensesThisYear.forEach(expense => {
+                    let expenseAmount = expense.amount;
+                    
+                    // Apply improvement factor for improved scenario
+                    if (expense.improvementFactor) {
+                        expenseAmount = expenseAmount * expense.improvementFactor;
+                    }
+                    
+                    // Apply inflation adjustment if specified
+                    if (expense.inflationAdjusted) {
+                        const yearsInflationApplied = i - yearsToRetirement - (expense.startYearFromRetirement || 0);
+                        expenseAmount = expenseAmount * Math.pow((1 + annualInflation), yearsInflationApplied);
+                    }
+                    
+                    yearlyImprovedExpenses += expenseAmount;
+                });
+                
+                improvedAssetsValue = improvedAssetsValue * (1 + improvedAnnualReturn) - yearlyImprovedExpenses;
+                
+                if (improvedAssetsValue < 0) {
+                    improvedAssetsValue = 0;
+                    if (improvedDepletionAge === null) {
+                        improvedDepletionAge = currentAge + i + 1;
+                        console.log(`Year ${i+1} (Age ${improvedDepletionAge}): Assets depleted`);
+                    }
+                }
+                improvedAssets.push(improvedAssetsValue);
+                
+                if (i === yearsToRetirement + partTimeYears || i === yearsToProject - 1 || (i % 5 === 0)) {
+                    console.log(`Year ${i+1} (Age ${currentAge+i+1}): Assets = ₹${(improvedAssetsValue/10000000).toFixed(2)} Cr, Annual Expenses = ₹${(yearlyImprovedExpenses/100000).toFixed(2)} Lakhs`);
+                }
+            }
+            
+            // Format data for display in crores
+            const improvedAssetsInCrores = improvedAssets.map(val => val / 10000000);
+            
+            // Output final data arrays for verification
+            console.log('\n--- CHART DATA (in Crores) ---');
+            console.log('Base Scenario:');
+            console.log(JSON.stringify(baseAssetsInCrores));
+            console.log('Improved Scenario:');
+            console.log(JSON.stringify(improvedAssetsInCrores));
+            
+            // Dynamic data for article
+            const financeData = {
+                // Raw values for display
+                rawInitialAssets: initialAssets,
+                rawMonthlySalary: monthlySalary,
+                rawMonthlyExpenses: monthlyExpenses,
+                
+                // Basic info
+                currentAge: currentAge,
+                retirementAge: retirementAge,
+                targetAge: targetAge,
+                
+                // Initial values
+                initialAssets: initialAssets / 10000000, // In crores
+                monthlySalary: monthlySalary / 1000, // In thousands
+                monthlyExpenses: monthlyExpenses / 1000, // In thousands
+                
+                // Base scenario
+                baseDepletionAge: baseDepletionAge || (targetAge + 1),
+                baseDepletionYear: 2023 + (baseDepletionAge || (targetAge + 1)) - currentAge,
+                baseReachesTargetAge: !baseDepletionAge || baseDepletionAge > targetAge,
+                basePeakAssets: peakAssetsAtRetirement.toFixed(1),
+                monthlyExpensesAt80: (expensesAtAge80 / 1000).toFixed(1), // In thousands
+                
+                // Improved scenario
+                improvedDepletionAge: improvedDepletionAge || (targetAge + 1),
+                improvedDepletionYear: 2023 + (improvedDepletionAge || (targetAge + 1)) - currentAge,
+                improvedReachesTargetAge: !improvedDepletionAge || improvedDepletionAge > targetAge,
+                improvedPeakAssets: improvedPeakAssetsAtRetirement.toFixed(1),
+                extendedYears: ((improvedDepletionAge || (targetAge + 1)) - (baseDepletionAge || (targetAge + 1))),
+                
+                // Financial parameters
+                baseReturn: (baseAnnualReturn * 100).toFixed(1),
+                improvedReturn: (improvedAnnualReturn * 100).toFixed(1),
+                inflationRate: (annualInflation * 100).toFixed(1),
+                additionalSavings: (improvedMonthlySavings - monthlySavings) / 1000, // In thousands
+                reducedExpenses: (1 - (reducedMonthlyExpenses / monthlyExpenses)) * 100, // Percentage reduction
+                partTimeMonthlyIncome: partTimeMonthlyIncome / 1000, // In thousands
+                partTimeYears: partTimeYears,
+                
+                // Health score (simplified calculation)
+                baseHealthScore: Math.min(100, Math.round((baseDepletionAge || (targetAge + 1)) / targetAge * 100)),
+                improvedHealthScore: Math.min(100, Math.round((improvedDepletionAge || (targetAge + 1)) / targetAge * 100))
+            };
+            
+            // Update all dynamic content in the article
+            updateArticleContent(financeData);
+            
+            // Create charts with simpler configuration that doesn't rely on the annotation plugin
+            const baseChart = new Chart(baseCtx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Assets (₹ Crore)',
+                        data: baseAssetsInCrores,
+                        borderColor: 'rgba(79, 70, 229, 1)',
+                        backgroundColor: 'rgba(79, 70, 229, 0.1)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 3,
+                        pointBackgroundColor: 'rgba(79, 70, 229, 1)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `₹${context.parsed.y.toFixed(2)} Cr`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Assets (₹ Crore)'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            const improvedChart = new Chart(improvedCtx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Assets (₹ Crore)',
+                        data: improvedAssetsInCrores,
+                        borderColor: 'rgba(16, 185, 129, 1)',
+                        backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 3,
+                        pointBackgroundColor: 'rgba(16, 185, 129, 1)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `₹${context.parsed.y.toFixed(2)} Cr`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Assets (₹ Crore)'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Add vertical lines using standard DOM elements for better compatibility
+            markRetirementAndTarget();
+        });
+
+        // Function to add vertical lines using DOM elements instead of Chart.js annotations
+        function markRetirementAndTarget() {
+            const containers = document.querySelectorAll('.chart-container');
+            const currentAge = 45;
+            const retirementAge = 55;
+            const targetAge = 90;
+            const yearsToProject = targetAge - currentAge + 1;
+            
+            // Calculate percentages for positioning lines
+            const retirementPercent = ((retirementAge - currentAge) / (yearsToProject - 1)) * 100;
+            const targetPercent = ((targetAge - currentAge) / (yearsToProject - 1)) * 100;
+            
+            containers.forEach((container, index) => {
+                // Add retirement line
+                const retirementMarker = document.createElement('div');
+                retirementMarker.style.position = 'absolute';
+                retirementMarker.style.top = '0';
+                retirementMarker.style.left = `${retirementPercent}%`;
+                retirementMarker.style.height = '100%';
+                retirementMarker.style.width = '2px';
+                retirementMarker.style.backgroundColor = 'rgba(255, 99, 132, 0.7)';
+                retirementMarker.style.borderStyle = 'dashed';
+                retirementMarker.style.zIndex = '1';
+                
+                const retirementLabel = document.createElement('div');
+                retirementLabel.textContent = 'Retirement';
+                retirementLabel.style.position = 'absolute';
+                retirementLabel.style.top = '5px';
+                retirementLabel.style.left = `${retirementPercent}%`;
+                retirementLabel.style.transform = 'translateX(-50%)';
+                retirementLabel.style.backgroundColor = 'rgba(255, 99, 132, 0.7)';
+                retirementLabel.style.color = 'white';
+                retirementLabel.style.padding = '2px 6px';
+                retirementLabel.style.borderRadius = '4px';
+                retirementLabel.style.fontSize = '12px';
+                retirementLabel.style.zIndex = '2';
+                
+                container.appendChild(retirementMarker);
+                container.appendChild(retirementLabel);
+                
+                // Add target age line for the second chart only
+                if (index === 1) {
+                    const targetMarker = document.createElement('div');
+                    targetMarker.style.position = 'absolute';
+                    targetMarker.style.top = '0';
+                    targetMarker.style.left = `${targetPercent}%`;
+                    targetMarker.style.height = '100%';
+                    targetMarker.style.width = '2px';
+                    targetMarker.style.backgroundColor = 'rgba(75, 192, 192, 0.7)';
+                    targetMarker.style.borderStyle = 'dashed';
+                    targetMarker.style.zIndex = '1';
+                    
+                    const targetLabel = document.createElement('div');
+                    targetLabel.textContent = 'Target Age';
+                    targetLabel.style.position = 'absolute';
+                    targetLabel.style.top = '5px';
+                    targetLabel.style.left = `${targetPercent}%`;
+                    targetLabel.style.transform = 'translateX(-50%)';
+                    targetLabel.style.backgroundColor = 'rgba(75, 192, 192, 0.7)';
+                    targetLabel.style.color = 'white';
+                    targetLabel.style.padding = '2px 6px';
+                    targetLabel.style.borderRadius = '4px';
+                    targetLabel.style.fontSize = '12px';
+                    targetLabel.style.zIndex = '2';
+                    
+                    container.appendChild(targetMarker);
+                    container.appendChild(targetLabel);
+                }
+            });
+        }
+        
+        // Function to update all dynamic content in the article based on calculation results
+        function updateArticleContent(data) {
+            // Helper function for currency formatting (INR)
+            const formatCurrency = (value) => {
+                if (value >= 10000000) { // Crores
+                    return `₹${(value / 10000000).toFixed(2)} Crore`;
+                } else if (value >= 100000) { // Lakhs
+                    return `₹${(value / 100000).toFixed(2)} Lakh`;
+                } else { // Thousands or less
+                    return `₹${value.toLocaleString('en-IN')}`;
+                }
+            };
+            
+            const formatCurrencyThousands = (value) => `₹${value.toLocaleString('en-IN')}`;
+
+
+            // --- Populate Snapshot Section ---
+            document.getElementById('age-value').textContent = `${data.currentAge} years`;
+            // Use the raw monthlySalary value from the calculation setup, not the 'k' version in financeData
+            document.getElementById('salary-value').textContent = formatCurrencyThousands(data.rawMonthlySalary); 
+            document.getElementById('retirement-age-value').textContent = `${data.retirementAge} years`;
+             // Use the raw initialAssets value from the calculation setup
+            document.getElementById('assets-value').textContent = formatCurrency(data.rawInitialAssets);
+            // Use the raw monthlyExpenses value from the calculation setup
+            document.getElementById('expenses-value').textContent = formatCurrencyThousands(data.rawMonthlyExpenses); 
+            
+            // --- Populate Key Projection Parameters Section ---
+             // Use the raw monthlySalary value
+            document.getElementById('monthly-income-value').textContent = formatCurrencyThousands(data.rawMonthlySalary);
+            // Note: Income growth isn't directly in financeData, pull from original const if needed or add it
+            // document.getElementById('income-growth-value').textContent = `7% annually`; // Keeping static for now unless added to financeData
+             // Use the raw monthlyExpenses value
+            document.getElementById('monthly-expenses-param-value').textContent = formatCurrencyThousands(data.rawMonthlyExpenses);
+            document.getElementById('inflation-rate-value').textContent = `${data.inflationRate}% annually`;
+            document.getElementById('portfolio-return-value').textContent = `${data.baseReturn}% annually`; // Using base return initially
+
+            // Base scenario result section
+            document.getElementById('baseScenarioResult').innerHTML = createBaseResultHTML(data);
+            
+            // Base scenario metrics
+            document.getElementById('baseScenarioMetrics').innerHTML = createBaseMetricsHTML(data);
+            
+            // Only show recommendations and improved scenario if money doesn't last until target age
+            if (!data.baseReachesTargetAge) {
+                // Recommendations section
+                document.getElementById('recommendationsSection').innerHTML = createRecommendationsHTML(data);
+                
+                // Improved scenario projections
+                document.getElementById('improvedScenarioProjections').innerHTML = createImprovedProjectionsHTML(data);
+                
+                // Improved scenario result section
+                document.getElementById('improvedScenarioResult').innerHTML = createImprovedResultHTML(data);
+                
+                // Improved scenario metrics
+                document.getElementById('improvedScenarioMetrics').innerHTML = createImprovedMetricsHTML(data);
+                
+                // Show the updated scenario section
+                document.getElementById('updatedScenarioSection').style.display = 'block';
+            } else {
+                // Hide the recommendations section
+                document.getElementById('recommendationsSection').innerHTML = '';
+                
+                // Hide the updated scenario section
+                document.getElementById('updatedScenarioSection').style.display = 'none';
+            }
+            
+            // Update all other dynamic references throughout the article
+            document.querySelectorAll('[data-dynamic]').forEach(el => {
+                const dataField = el.getAttribute('data-dynamic');
+                if (data[dataField] !== undefined) {
+                    el.textContent = data[dataField];
+                }
+            });
+        }
+        
+        // HTML creator functions for each dynamic section
+        function createBaseResultHTML(data) {
+            const isSuccessful = data.baseReachesTargetAge;
+            
+            if (isSuccessful) {
+                return `
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-check text-green-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium text-xl">Financial Runway End Date: <span class="text-green-600 font-bold">~${data.baseDepletionYear} (Age ${data.baseDepletionAge})</span></p>
+                            <p class="text-gray-600">Rohit's money is projected to last until he's ${data.baseDepletionAge} years old, successfully reaching his goal of ${data.targetAge}.</p>
+                        </div>
+                    </div>
+                `;
+            } else {
+                return `
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-exclamation-triangle text-yellow-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium text-xl">Financial Runway End Date: <span class="text-yellow-600 font-bold">~${data.baseDepletionYear} (Age ${data.baseDepletionAge})</span></p>
+                            <p class="text-gray-600">Rohit's money is projected to last until he's about ${data.baseDepletionAge} years old, falling short of his goal of ${data.targetAge}.</p>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+        
+        function createBaseMetricsHTML(data) {
+            return `
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <h4 class="text-gray-600 mb-1 text-sm">Current Assets</h4>
+                        <p class="text-2xl font-bold text-indigo-600">₹${data.initialAssets.toFixed(2)} Cr</p>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="text-gray-600 mb-1 text-sm">Peak Assets (at age ${data.retirementAge})</h4>
+                        <p class="text-2xl font-bold text-green-600">₹${data.basePeakAssets} Cr</p>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <h4 class="text-gray-600 mb-1 text-sm">Monthly Expenses at 80</h4>
+                        <p class="text-2xl font-bold text-red-600">₹${data.monthlyExpensesAt80} K</p>
+                    </div>
+                </div>
+            `;
+        }
+        
+        function createRecommendationsHTML(data) {
+            const needsImprovement = !data.baseReachesTargetAge;
+            
+            // If money already lasts until target age, don't show recommendations
+            if (!needsImprovement) {
+                return '';
+            }
+            
+            // Run multiple optimization scenarios to find realistic recommendations
+            const scenarios = calculateOptimizationScenarios(data);
+            
+            return `
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Recommendations for Rohit</h2>
+                <p class="mb-4">To help Rohit extend his financial runway to age ${data.targetAge}, we recommend the following adjustments:</p>
+                <div class="space-y-6">
+                    ${scenarios.savingsRecommendation ? `
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-piggy-bank text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-1">Increase Savings Rate</h3>
+                                <p class="text-gray-600">${scenarios.savingsRecommendation}</p>
+                            </div>
+                        </div>
+                    </div>
+                    ` : ''}
+                    
+                    ${scenarios.investmentRecommendation ? `
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-chart-line text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-1">Optimize Investment Mix</h3>
+                                <p class="text-gray-600">${scenarios.investmentRecommendation}</p>
+                            </div>
+                        </div>
+                    </div>
+                    ` : ''}
+                    
+                    ${scenarios.incomeRecommendation ? `
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-hand-holding-usd text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-1">Post-Retirement Income</h3>
+                                <p class="text-gray-600">${scenarios.incomeRecommendation}</p>
+                            </div>
+                        </div>
+                    </div>
+                    ` : ''}
+                    
+                    ${scenarios.expenseRecommendation ? `
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-minus-circle text-red-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800 mb-1">Expense Management</h3>
+                                <p class="text-gray-600">${scenarios.expenseRecommendation}</p>
+                            </div>
+                        </div>
+                    </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+        
+        // New function to calculate realistic optimization scenarios
+        function calculateOptimizationScenarios(data) {
+            const scenarios = {
+                savingsRecommendation: null,
+                investmentRecommendation: null,
+                incomeRecommendation: null,
+                expenseRecommendation: null
+            };
+            
+            // Current parameters
+            const currentAge = data.currentAge;
+            const retirementAge = data.retirementAge;
+            const targetAge = data.targetAge;
+            const yearsToRetirement = retirementAge - currentAge;
+            const baseReturn = parseFloat(data.baseReturn) / 100;
+            
+            // 1. Savings increase recommendation
+            // Calculate realistic savings target based on current income
+            const rawMonthlySalary = data.rawMonthlySalary;
+            const rawMonthlyExpenses = data.rawMonthlyExpenses;
+            const currentSavingsRate = (rawMonthlySalary - rawMonthlyExpenses) / rawMonthlySalary * 100;
+            
+            // Determine reasonable additional savings (cap at 15% additional of salary)
+            const maxAdditionalSavingsRate = Math.min(15, 50 - currentSavingsRate);
+            const reasonableAdditionalSavings = Math.round((maxAdditionalSavingsRate / 100) * rawMonthlySalary / 1000) * 1000;
+            
+            if (reasonableAdditionalSavings >= 10000) { // Only recommend if significant
+                const additionalCorpus = reasonableAdditionalSavings * 12 * yearsToRetirement * 
+                    // Factor in compound growth of additional savings
+                    ((Math.pow(1 + baseReturn, yearsToRetirement) - 1) / baseReturn);
+                
+                // Format to appropriate scale (lakhs/crores)
+                const formattedAdditionalCorpus = additionalCorpus >= 10000000 ? 
+                    `₹${(additionalCorpus / 10000000).toFixed(1)} Cr` : 
+                    `₹${(additionalCorpus / 100000).toFixed(0)} Lakhs`;
+                
+                scenarios.savingsRecommendation = `Rohit should try to save an extra ₹${reasonableAdditionalSavings/1000}K per month for the next ${yearsToRetirement} years. This could add approximately ${formattedAdditionalCorpus} to his retirement corpus.`;
+            }
+            
+            // 2. Investment optimization
+            // Calculate a realistic improved return based on current markets
+            // Typically a +1-2% improvement is achievable through better allocation
+            const currentReturn = baseReturn * 100;
+            let improvedReturn;
+            
+            if (currentReturn < 7) {
+                improvedReturn = currentReturn + 1.5; // More room for improvement at lower returns
+            } else if (currentReturn < 9) {
+                improvedReturn = currentReturn + 1.0; // Moderate improvement at average returns
+            } else {
+                improvedReturn = currentReturn + 0.5; // Small improvement at already-good returns
+            }
+            
+            // Estimate years extension from return improvement
+            const yearsExtension = Math.round((improvedReturn - currentReturn) * 0.5 * (targetAge - retirementAge) / 100 * 5);
+            
+            scenarios.investmentRecommendation = `Optimize portfolio allocation to target a ${improvedReturn.toFixed(1)}% annual return (currently ${currentReturn.toFixed(1)}%). This could be achieved by increasing equity exposure to 50-60% through low-cost index funds, which might extend the runway by approximately ${yearsExtension} years.`;
+            
+            // 3. Post-retirement income
+            // Consider skills and profession to suggest realistic part-time work
+            const partTimeYears = Math.min(10, Math.ceil((targetAge - data.baseDepletionAge) / 3));
+            const partTimeMonthlyIncome = Math.min(rawMonthlySalary * 0.3, 50000); // 30% of current income or 50K max
+            
+            scenarios.incomeRecommendation = `Consider part-time consulting work for ${partTimeYears} years after retirement. With Rohit's IT background, even ₹${partTimeMonthlyIncome/1000}K per month (a fraction of his current salary) can significantly extend his financial runway while keeping him professionally engaged.`;
+            
+            // 4. Expense management
+            // Calculate realistic expense reduction based on current expenses
+            // Non-essential expenses typically make up 20-30% of total expenses
+            const reasonableExpenseReduction = Math.round(Math.min(20, (rawMonthlyExpenses > 150000 ? 25 : 15)));
+            const newMonthlyExpenses = rawMonthlyExpenses * (1 - reasonableExpenseReduction/100);
+            
+            // Calculate how many years this would add to runway
+            const approxYearsAdded = Math.round(reasonableExpenseReduction / 5); // Rough estimation
+            
+            scenarios.expenseRecommendation = `Review and optimize post-retirement expenses by ${reasonableExpenseReduction}% (to approximately ₹${newMonthlyExpenses/1000}K monthly). Focus on optimizing housing, transportation, and discretionary spending without sacrificing quality of life. This change alone could extend Rohit's financial runway by about ${approxYearsAdded} years.`;
+            
+            return scenarios;
+        }
+        
+        function createImprovedResultHTML(data) {
+            const isSuccessful = data.improvedReachesTargetAge;
+            
+            if (isSuccessful) {
+                return `
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-check text-green-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium text-xl">New Financial Runway End Date: <span class="text-green-600 font-bold">~${data.improvedDepletionYear} (Age ${data.improvedDepletionAge})</span></p>
+                            <p class="text-gray-600">With these adjustments, Rohit's money is now projected to last until his target age of ${data.targetAge}.</p>
+                        </div>
+                    </div>
+                `;
+            } else {
+                return `
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center mr-4">
+                            <i class="fas fa-exclamation-triangle text-yellow-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium text-xl">New Financial Runway End Date: <span class="text-yellow-600 font-bold">~${data.improvedDepletionYear} (Age ${data.improvedDepletionAge})</span></p>
+                            <p class="text-gray-600">With these adjustments, Rohit's money now lasts until age ${data.improvedDepletionAge}, getting closer to his target of ${data.targetAge}.</p>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+        
+        function createImprovedMetricsHTML(data) {
+            return `
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <h4 class="text-gray-600 mb-1 text-sm">New Peak Assets (at age ${data.retirementAge})</h4>
+                        <p class="text-2xl font-bold text-indigo-600">₹${data.improvedPeakAssets} Cr</p>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="text-gray-600 mb-1 text-sm">Extended By</h4>
+                        <p class="text-2xl font-bold text-green-600">${data.extendedYears} Years</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="text-gray-600 mb-1 text-sm">Financial Health Score</h4>
+                        <p class="text-2xl font-bold text-blue-600">${data.improvedHealthScore}/100</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function createImprovedProjectionsHTML(data) {
+            // Pull data from our calculated scenarios instead of using fixed values
+            const scenarios = calculateOptimizationScenarios(data);
+            
+            // Extract numeric values from recommendation strings
+            let additionalSavings = "0";
+            let improvedReturn = data.baseReturn;
+            let partTimeIncome = "0";
+            let expenseReduction = "0";
+            
+            if (scenarios.savingsRecommendation) {
+                const match = scenarios.savingsRecommendation.match(/₹(\d+)K per month/);
+                if (match) additionalSavings = match[1];
+            }
+            
+            if (scenarios.investmentRecommendation) {
+                const match = scenarios.investmentRecommendation.match(/target a (\d+\.\d+)%/);
+                if (match) improvedReturn = match[1];
+            }
+            
+            if (scenarios.incomeRecommendation) {
+                const match = scenarios.incomeRecommendation.match(/₹(\d+)K per month/);
+                if (match) partTimeIncome = match[1];
+            }
+            
+            if (scenarios.expenseRecommendation) {
+                const match = scenarios.expenseRecommendation.match(/expenses by (\d+)%/);
+                if (match) expenseReduction = match[1];
+            }
+            
+            // Calculate new expense level after reduction
+            const reducedExpenses = Math.round(data.monthlyExpenses * (1 - parseInt(expenseReduction) / 100));
+            
+            return `
+                <div class="highlight-box">
+                    <h3 class="font-bold text-gray-800 mb-2">Improved Scenario Projections</h3>
+                    <ul class="space-y-2">
+                        ${scenarios.savingsRecommendation ? 
+                          `<li><span class="font-medium">Increased Monthly Savings:</span> <span class="number-highlight">+₹${additionalSavings}K per month</span> until retirement</li>` : ''}
+                        ${scenarios.investmentRecommendation ? 
+                          `<li><span class="font-medium">Optimized Portfolio Return:</span> <span class="number-highlight">${improvedReturn}% annually</span> (from ${data.baseReturn}%)</li>` : ''}
+                        ${scenarios.incomeRecommendation ? 
+                          `<li><span class="font-medium">Post-Retirement Part-Time Income:</span> <span class="number-highlight">₹${partTimeIncome}K monthly</span> for ${scenarios.incomeRecommendation.match(/for (\d+) years/) ? scenarios.incomeRecommendation.match(/for (\d+) years/)[1] : '5'} years</li>` : ''}
+                        ${scenarios.expenseRecommendation ? 
+                          `<li><span class="font-medium">Reduced Post-Retirement Expenses:</span> <span class="number-highlight">₹${reducedExpenses}K monthly</span> (from ₹${data.monthlyExpenses}K)</li>` : ''}
+                    </ul>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html> 

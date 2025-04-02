@@ -13,6 +13,45 @@ google_analytics: |
     gtag('js', new Date());
     gtag('config', 'G-T96F7YCF84');
   </script>
+  <script src="https://www.googletagmanager.com/gtag/js?id=G-11CYBTV51S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-11CYBTV51S');
+  </script>
+  <script src="../shared/analytics.js"></script>
+  <script>
+    // Track when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        trackToolUsage('Income Tax Calculator', 'Page View');
+    });
+
+    // Track when calculator is used
+    function calculateTax() {
+        // ... existing calculation code ...
+        
+        // Track the calculation
+        trackCalculatorUsage('Income Tax Calculator', true);
+        
+        // Show results
+        showResults();
+    }
+
+    // Track when results are viewed
+    function showResults() {
+        // ... existing show results code ...
+        
+        trackResultsView('Income Tax Calculator');
+    }
+
+    // Track when user shares results
+    function shareResults(method) {
+        // ... existing share code ...
+        
+        trackShare('Income Tax Calculator', method);
+    }
+  </script>
 head_content: |
   <link rel="author" href="humans.txt" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
